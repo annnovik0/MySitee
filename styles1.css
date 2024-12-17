@@ -1,0 +1,52 @@
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+  vertical-align: middle;
+}
+#group {
+  margin-top: 0px;
+}
+.image {
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+  border: 3px solid rgb(172, 151, 154);
+  border-radius: 10px;
+}
+.text {
+  margin-right: 10px;
+}
+.container2 {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.vidos {
+  display: flex;
+  margin-bottom: 20px;
+}
+iframe {
+  border: 2px solid rgb(172, 151, 154);
+  padding: 10px;
+  margin: auto;
+}
+@media (min-width: 300px) and (max-width: 1300px) {
+  .column-right {
+    padding-left: 10px;
+  }
+  .grid-container {
+    grid-template-columns: 20% 80%;
+  }
+  .image {
+    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+  }
+  .vidos {
+    padding-right: 10px;
+  }
+}

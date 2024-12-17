@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="commonStyles.css" />
+
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrvLCvBjPMdD1pELkenK0fzuuHfJGahItBdg&s"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .switchTerms {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .firstTerm {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgb(232, 218, 219);
+        border: 1px solid rgb(172, 151, 154);
+        color: white;
+      }
+
+      .secondTerm {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: rgb(232, 218, 219);
+        border: 1px solid rgb(172, 151, 154);
+        color: white;
+      }
+      .active {
+        background-color: rgb(218, 191, 195);
+        color: white;
+      }
+
+      .firstTerm.active {
+        background-color: rgb(218, 191, 195);
+        color: white;
+      }
+
+      .secondTerm.active {
+        background-color: rgb(218, 191, 195);
+        color: white;
+      }
+      h4 {
+        transition: transform 0.3s ease;
+      }
+
+      h4:hover {
+        transform: scale(1.1);
+      }
+      p {
+        transition: background-color 0.5s ease;
+      }
+
+      p.clicked {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logoKotik" id="logoKotik" src="logo2.png" alt="Logo" />
+      <div class="right">
+        <h4 id="group">Группа ЭФБО-02-23</h4>
+        <h4>Новикова Анна Александровна</h4>
+      </div>
+    </header>
+    <nav>
+      <a href="index1.html">Главная</a>
+      <a href="index3.html"> Первый семестр</a>
+      <a href="ккк.html">Второй семестр</a>
+    </nav>
+    <div class="container grid-container">
+      <div class="column-left">
+        <h4>Навигация по странице</h4>
+        <a href="#lections">Лекции</a>
+        <a href="#practice">Практики</a>
+        <a href="#address">Адреса вуза</a>
+        <a href="#working_program">Рабочая программа</a>
+      </div>
+      <div class="column-right">
+        <h2>Первый семестр</h2>
+
+        <h3 id="lictions">Лекции</h3>
+        <div class="table-container lecturesTable" style="display: none">
+          <table class="table">
+            <tr>
+              <th>Номер</th>
+              <th class="left">Тема</th>
+              <th>Посещение</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Основы языка HTML</td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Углубленное изучение HTML</td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Основы работы с CSS</td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Адаптивная верстка. Flexbox и Grid Layout</td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Bootstrap - работа с фреймворками</td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Основы языка JavaScript</td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Работа с DOM и событиями в JavaScript</td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Введение в GitHub и GitHab Pages</td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+          </table>
+        </div>
+        <div class="switchTerms">
+          <button class="firstTerm">Первый семестр</button>
+          <button class="secondTerm">Второй семестр</button>
+        </div>
+        <h3 id="practice">Практики</h3>
+        <div class="table-container">
+          <table class="table seminars">
+            <tr>
+              <th>Номер</th>
+              <th class="left">Тема</th>
+              <th>Посещение</th>
+              <th>Выполнение</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Основы языка HTML</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Формы и кнопки в HTML</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Таблицы и интерактивные элементы в HTML</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Основы работы с CSS</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Работа с классами в CSS</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Работа с сетками и разметкой в HTML</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Адаптивная верстка</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Bootstrap</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Основы языка JavaScript</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Базовые задачи на JS</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>DOM-структура приложений и работа с объектами в языке JS</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Встраивание скриптов</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Отладка сценариев</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Анимации и работа с ними</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>GitHub</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Защита проекта</td>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td><input type="checkbox" name="" id="" /></td>
+            </tr>
+          </table>
+        </div>
+        <h3 id="address">
+          Занятия проходят по адресу Проспект Вернадского, 78
+        </h3>
+        <iframe
+          class="map"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A560a25f5bfb1482b1c70608cb3cb7d357b16e726b4972a83eb2917be7cb82eb4&amp;source=constructor"
+          width="613"
+          height="404"
+          frameborder="0"
+        ></iframe>
+        <h3 id="working_program" class="d">Рабочая программа</h3>
+        <embed
+          src="https://drive.google.com/file/d/1suj3ExQNn6KaLxIgKkrw0OnDWhazP5lt/preview"
+          class="pdf"
+          width="600"
+          height="400"
+          allow="autoplay"
+        />
+      </div>
+    </div>
+    <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+    <footer>
+      <a href="https://t.me/annnovik0" class="telegram">
+        <img
+          id="telegram"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTggUetH_au6YvRR4NplvXaAPkOczBWqMprAw&s"
+          alt="telegram"
+          height="30"
+          width="30"
+        />
+      </a>
+      <p class="center">&copy Новикова Анна Александровна, 2024</p>
+    </footer>
+  </body>
+  <script src="woorkbook13.js"></script>
+  <script src="woorkbook14.js"></script>
+
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.onscroll = function () {
+      if (
+        document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 100
+      ) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+    scrollToTopBtn.onclick = function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+  </script>
+</html>

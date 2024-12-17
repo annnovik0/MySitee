@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles1.css" />
+    <link rel="stylesheet" href="commonStyles.css" />
+
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrvLCvBjPMdD1pELkenK0fzuuHfJGahItBdg&s"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img class="logoKotik" src="logo2.png" alt="Logo" />
+      <div class="right">
+        <h4 id="group">Группа ЭФБО-02-23</h4>
+        <h4>Новикова Анна Александровна</h4>
+      </div>
+    </header>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="index3.html"> Первый семестр</a>
+      <a href="ккк.html">Второй семестр</a>
+      <a href="index1.2.html">Услуги</a>
+      <a href="#">Авторизация</a>
+    </nav>
+    <div class="container grid-container">
+      <div class="column-left">
+        <h4>Навигация по странице</h4>
+        <a href="#frontend">Фронтенд</a>
+        <a href="#backend">Бэкенд</a>
+      </div>
+      <div class="column-right">
+        <h2 id="greetings">Добро пожаловать на мой сайт!</h2>
+        <div class="container2">
+          <p class="text">
+            Меня зовут Новикова Анна Александровна и я начинающий фронтенд
+            разработчик.
+          </p>
+          <img
+            id="cat"
+            src="https://i.pinimg.com/222x/f1/99/03/f199032e8dce43c72a26760cb0c54fd7.jpg"
+            alt="Котик"
+            class="image"
+          />
+        </div>
+        <h3 id="frontend">Фронтенд</h3>
+        <p>
+          Фронтенд (или клиентская часть) - это то, что видит пользователь. Он
+          включает в себя все визуальные элементы веб-сайта или приложения:
+          кнопки, формы, изображения и текст. Фронтенд разработчики используют
+          языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы
+          создавать интерактивные и привлекательные интерфейсы. Основная задача
+          фронтенда - обеспечить удобство использования и эстетическую
+          привлекательность.
+        </p>
+        <div class="vidos">
+          <iframe
+            width="500"
+            height="350"
+            src="https://rutube.ru/play/embed/398d0d6068e8733587cfb14eeaa3a4f4"
+            frameborder="0"
+            allow="clipboard-write; autoplay"
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <h3 id="backend">Бэкенд</h3>
+        <p>
+          Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он
+          отвечает за обработку данных, управление пользователями и
+          взаимодействие c базами данных. Бэкенд разработчики используют языки
+          программирования, такие как Python, Ruby, Java, a также фреймворки и
+          базы данных для создания логики приложения. Основная задача бэкенда -
+          обеспечить стабильную работу приложения и безопасность данных.
+        </p>
+        <div class="vidos">
+          <iframe
+            width="500"
+            height="350"
+            src="https://rutube.ru/play/embed/b9b88587da8ce6b0202e84a89dfc2e39"
+            frameborder="0"
+            allow="clipboard-write; autoplay"
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://t.me/annnovik0" class="telegram">
+        <img
+          id="telegram"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTggUetH_au6YvRR4NplvXaAPkOczBWqMprAw&s"
+          alt="telegram"
+          height="30"
+          width="30"
+        />
+      </a>
+      <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+
+      <p class="center">&copy Новикова Анна Александровна, 2024</p>
+    </footer>
+  </body>
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.onscroll = function () {
+      if (
+        document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 100
+      ) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+    scrollToTopBtn.onclick = function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+  </script>
+</html>

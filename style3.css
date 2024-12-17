@@ -1,0 +1,90 @@
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+  vertical-align: middle;
+}
+.left {
+  text-align: left;
+}
+#group {
+  margin-top: 0px;
+}
+.table-container {
+  overflow-x: auto;
+}
+.image {
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+  border: 3px solid rgb(172, 151, 154);
+  border-radius: 10px;
+}
+.text {
+  margin-right: 10px;
+}
+.container2 {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+table {
+  border: 1px solid rgb(172, 151, 154);
+  margin-right: 10px;
+  width: 800px;
+}
+th {
+  background-color: rgb(218, 191, 195);
+}
+table tr:nth-child(even) {
+  background-color: rgb(226, 203, 206);
+}
+table tr:hover {
+  background-color: rgba(195, 177, 179, 0.648);
+}
+table td:nth-child(1),
+table td:nth-child(3),
+table td:nth-child(4) {
+  text-align: center;
+}
+.map {
+  width: 600px;
+  height: 400px;
+  padding-bottom: 10px;
+  border: 2px solid rgb(172, 151, 154);
+  padding: 10px;
+}
+.pdf {
+  border: 2px solid rgb(172, 151, 154);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 890px) and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 20% 80%;
+  }
+  .pdf {
+    max-width: 500px;
+    width: 400px;
+  }
+  .map {
+    max-width: 500px;
+    width: 400px;
+  }
+}
+@media (min-width: 300px) and (max-width: 889px) {
+  .grid-container {
+    grid-template-columns: 20% 80%;
+  }
+  .pdf {
+    max-width: 500px;
+    width: 350px;
+  }
+  .map {
+    max-width: 500px;
+    width: 350px;
+  }
+}

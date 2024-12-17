@@ -1,0 +1,231 @@
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+
+.block {
+  min-width: 180px;
+  border: 1px solid black;
+  margin-right: 20px;
+  background-color: rgb(218, 191, 195);
+  border: 2px solid rgb(172, 151, 154);
+}
+.block-transformation {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+.block:hover {
+  transform: scale(1.1);
+}
+.text {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  size: 100%;
+}
+.pic {
+  border-bottom: 1px solid rgb(172, 151, 154);
+}
+
+.b {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+button {
+  margin-bottom: 10px;
+}
+form {
+  background-color: rgb(218, 191, 195);
+  border: 2px solid rgb(172, 151, 154);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  max-height: 650px;
+  vertical-align: center;
+  padding: 10px;
+  position: relative;
+}
+form * p,
+label,
+h2 {
+  color: rgb(255, 255, 255);
+}
+button {
+  color: rgb(202, 179, 183);
+  border-color: white;
+}
+.tvar {
+  color: white;
+}
+.a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+input,
+textarea,
+button,
+select {
+  border-radius: 5px;
+  font-size: 16px;
+}
+input,
+textarea,
+select {
+  background-color: rgb(235, 222, 228);
+  border-color: rgb(255, 255, 255);
+}
+button:hover {
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+}
+button {
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+::placeholder {
+  color: #919191;
+}
+#c {
+  color: #919191;
+}
+.check {
+  display: flex;
+}
+.agreement_text {
+  display: inline-block;
+  vertical-align: center;
+  align-items: center;
+}
+#checkbox {
+  display: inline-block;
+  vertical-align: center;
+  align-items: center;
+}
+label {
+  font-size: 18px;
+}
+.agreement {
+  display: flex;
+}
+.close {
+  color: #aaa;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+}
+.close2 {
+  color: #aaa;
+  font-size: 28px;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+.close2:hover,
+.close2:focus {
+  color: white;
+}
+.close3 {
+  color: #aaa;
+  font-size: 28px;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+.close3:hover,
+.close3:focus {
+  color: white;
+}
+.send {
+  width: 200px;
+  margin: auto;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+.send:hover {
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Остается на месте при прокрутке */
+  z-index: 1; /* На переднем плане */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Прокрутка при необходимости */
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+}
+.sending {
+  padding: 20px 50px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  /* box-sizing: border-box; */
+}
+@media (min-width: 890px) and (max-width: 1150px) {
+  .cards {
+    justify-content: center;
+  }
+  .block {
+    width: 200px;
+  }
+  .block img {
+    height: 220px;
+  }
+  .column-right p {
+    margin-right: 5px;
+    margin-left: 6px;
+  }
+}
+@media (min-width: 300px) and (max-width: 889px) {
+  .cards {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .block {
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  .block img {
+    height: 300px;
+    width: 350px;
+  }
+  .column-right p {
+    margin-right: 5px;
+    margin-left: 6px;
+  }
+}
+@media (min-width: 890px) and (max-width: 1150px) {
+  .grid-container {
+    grid-template-columns: 20% 80%;
+  }
+}
+@media (min-width: 200) and (max-width: 889px) {
+  .grid-container {
+    grid-template-columns: 20% 80%;
+  }
+}
